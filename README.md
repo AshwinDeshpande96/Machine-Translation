@@ -17,6 +17,7 @@ This model is based on [Bahdanau attention](https://arxiv.org/abs/1409.0473).
   * Add the two outputs on fully connected layer.
   * Activate using tanh.
   * Run activated vector through another fully connected layer.
+  * Output of the fully connected layer is the Context vector.
 * Decoder:
   * Takes as input:
     * If decoder is at word i, input is the words preceding: (z<sub>1</sub>, z<sub>2</sub>, ... , z<sub>i-1</sub>) in Hindi.
