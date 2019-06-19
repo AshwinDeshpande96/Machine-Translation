@@ -11,7 +11,7 @@ This dataset is obtained from [IIT-Bombay English-Hindi Parallel Corpus](http://
       
       जांच न्यूनतम ध्वनि प्रदूषण 72.5 और अधिकतम 83.6 पाया गया।
       
-Lack of data incurs huge amount variance error, and hence the predictions local to training data. Therefore this is not a generalized model, and requires significant amount of data.
+Lack of data incurs huge amount variance error, and hence the predictions are local to training data. Therefore this is not a generalized model, and requires more amount of data. This causes some problems, these problems are shown in the following text.
 
 ## 2. Model Architecture
 
