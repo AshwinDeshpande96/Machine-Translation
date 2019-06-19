@@ -1,6 +1,6 @@
 # Machine-Translation
 Machine translation model to translate sentences from English to Hindi.
-This is an investigation of attention based neural machine translation project for low-resource environment. We perform similar tasks as [A study of attention-based Neural Machine Translation models on Indian
+This is an investigation of attention based neural machine translation project in low-resource environment. A similar study was found here: [A study of attention-based Neural Machine Translation models on Indian
 Languages](http://cse.iitkgp.ac.in/~ayand/W16-3717.pdf)
 
 ## 1. Dataset
