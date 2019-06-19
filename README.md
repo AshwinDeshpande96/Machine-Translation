@@ -49,7 +49,7 @@ One example is given as follows:
     
     
     Predicted translation: पुलिस ने गंगा व चंद्र किरण को कड़ी मशक्कत के बाद क्षतिग्रस्त टैक्सी से बाहर निकाला और नागरिक अस्पताल सुंदरनगर ले गए। <end> 
-This input is very similar to training data, only two words: police and hospital were replaced with doctors and home respectively. Therefore the output while it produces excellent results is insensitive to tiny changes, and cannot generalize well. Availability of larger corpus should definitely help alleviate this issue. 
+This input is very similar to training data, only two words: 'police' and 'hospital' were replaced with 'doctors' and 'home' respectively. Therefore the output while it produces excellent results is insensitive to tiny changes, and cannot generalize well. Availability of larger corpus should definitely help alleviate this issue. 
 Full implementation of this project is given [here](https://github.com/AshwinDeshpande96/Machine-Translation/blob/master/NMT_Hindi_English.ipynb)
 
 ## 5. Future Work
