@@ -4,7 +4,14 @@ This is an investigation of attention based neural machine translation project f
 Languages](http://cse.iitkgp.ac.in/~ayand/W16-3717.pdf)
 
 ## 1. Dataset
-This dataset is obtained from [IIT-Bombay English-Hindi Parallel Corpus](http://www.cfilt.iitb.ac.in/iitb_parallel/). Parallel dataset consists of one file with 1,561,840 segments. However, majority of the corpus is made of segments such as 'IPython Console', 'Hide private attributes', 'The default plugin layout for the bottom panel' etc. As you can see these are Computer Science jargons and do not reflect natural language. Thus, dataset with 3027 sentences was chosen as it consists of natural language sentences. Lack of data incurs huge amount variance error, and hence the predictions local to training data. Therefore this is not a generalized model, and requires significant amount of data.
+This dataset is obtained from [IIT-Bombay English-Hindi Parallel Corpus](http://www.cfilt.iitb.ac.in/iitb_parallel/). Parallel dataset consists of one file with 1,561,840 segments. However, majority of the corpus is made of segments such as 'IPython Console', 'Hide private attributes', 'The default plugin layout for the bottom panel' etc. As you can see these are Computer Science jargons and do not reflect natural language. Thus, dataset with 3027 sentences was chosen as it consists of natural language sentences.
+
+      The minimum noise level was found to be 72.5 decibels and the maximum 83.6 decibels.
+      
+      
+      जांच न्यूनतम ध्वनि प्रदूषण 72.5 और अधिकतम 83.6 पाया गया।
+      
+Lack of data incurs huge amount variance error, and hence the predictions local to training data. Therefore this is not a generalized model, and requires significant amount of data.
 
 ## 2. Model Architecture
 
