@@ -44,7 +44,7 @@ This application is most favourable in areas where English is not the most spoke
 ## 4. Results
 One example is given as follows: 
  
-    English: the police were able to remove ganga and chandra kiran from the damaged car with some difficulty and took them to the sundernagar civil hospital . <end>
+    Input: the police were able to remove ganga and chandra kiran from the damaged car with some difficulty and took them to the sundernagar civil hospital . <end>
     
     
     Predicted translation: पुलिस ने गंगा व चंद्र किरण को कड़ी मशक्कत के बाद क्षतिग्रस्त टैक्सी से बाहर निकाला और नागरिक अस्पताल सुंदरनगर ले गए। <end> 
