@@ -1,13 +1,14 @@
 # Machine-Translation
 Machine translation model to translate sentences from English to Hindi.
-This is a low-resource neural machine translation project. 
+This is an investigation of attention based neural machine translation project for low-resource environment. We perform similar tasks as [A study of attention-based Neural Machine Translation models on Indian
+Languages](http://cse.iitkgp.ac.in/~ayand/W16-3717.pdf)
 
 ## 1. Dataset
 This dataset is obtained from [IIT-Bombay English-Hindi Parallel Corpus](http://www.cfilt.iitb.ac.in/iitb_parallel/). Parallel dataset consists of one file with 1,561,840 segments. However, majority of the corpus is made of segments such as 'IPython Console', 'Hide private attributes', 'The default plugin layout for the bottom panel' etc. As you can see these are Computer Science jargons and do not reflect natural language. Thus, dataset with 3027 sentences was chosen as it consists of natural language sentences. Lack of data incurs huge amount variance error, and hence the predictions local to training data. Therefore this is not a generalized model, and requires significant amount of data.
 
 ## 2. Model Architecture
 
-This model has a encoder-decoder type architecture. Encoder and Decoder are Recurrent Neural Networks with an Attention Layer in between. It is based on [Bahdanau attention](https://arxiv.org/abs/1409.0473). 
+This model has a encoder-decoder type architecture. Encoder and Decoder are Recurrent Neural Networks with an Attention Layer in between. It is based on [Bahdanau Attention](https://arxiv.org/abs/1409.0473). 
 Following is a gross summary of the model and is exactly implemented in this project.
 * It takes as input a sequence of words: (x<sub>1</sub>, x<sub>2</sub>, ... , x<sub>n</sub>) in English.
 * Encoder: is a GRU recurrent neural network.
@@ -44,9 +45,13 @@ This application is most favourable in areas where English is not the most spoke
 ## 4. Results
 One example is given as follows: 
  
-    Input: the police were able to remove ganga and chandra kiran from the damaged car with some difficulty and took them to the sundernagar civil hospital . <end>
+    Input: the doctors were able to remove ganga and chandra kiran from the damaged car with some difficulty and took them to the sundernagar civil home . <end>
     
     
     Predicted translation: पुलिस ने गंगा व चंद्र किरण को कड़ी मशक्कत के बाद क्षतिग्रस्त टैक्सी से बाहर निकाला और नागरिक अस्पताल सुंदरनगर ले गए। <end> 
-
+This input is very similar to training data, only two words: police and hospital were replaced with doctors and home respectively. Therefore the output while it produces excellent results is insensitive to tiny changes, and cannot generalize well. Availability of larger corpus should definitely help alleviate this issue. 
 Full implementation of this project is given [here](https://github.com/AshwinDeshpande96/Machine-Translation/blob/master/NMT_Hindi_English.ipynb)
+
+## 5. Future Work
+
+We are working on a model that omits RNN or CNN architecture completely and only used Attention: [Attention is all you need](https://arxiv.org/abs/1706.03762). This part is under progress and will uploaded soon.
