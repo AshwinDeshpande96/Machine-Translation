@@ -42,5 +42,11 @@ By the end of the sentence (i.e. when end token in encountered), we will have pr
 This application is most favourable in areas where English is not the most spoken language, and yet some vital information needs to translated in order to carry out necessary task, such as filling an application form, instructions at a bank/public office etc.
 
 ## 4. Results
+One example is given as follows: 
+ 
+    English: the police were able to remove ganga and chandra kiran from the damaged car with some difficulty and took them to the sundernagar civil hospital . <end>
+    
+    
+    Predicted translation: पुलिस ने गंगा व चंद्र किरण को कड़ी मशक्कत के बाद क्षतिग्रस्त टैक्सी से बाहर निकाला और नागरिक अस्पताल सुंदरनगर ले गए। <end> 
 
 Full implementation of this project is given [here](https://github.com/AshwinDeshpande96/Machine-Translation/blob/master/NMT_Hindi_English.ipynb)
